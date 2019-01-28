@@ -9,7 +9,6 @@ def reformat_languages(languages)
         new_hash[language] = data
         new_hash[language][:style] = [style]
       end
-      binding.pry
     end
   end
   new_hash
