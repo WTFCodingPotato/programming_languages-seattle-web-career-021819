@@ -8,6 +8,8 @@ def reformat_languages(languages)
       if !new_hash.has_key?(language)
         new_hash[language] = data
         new_hash[language][:style] = [style]
+      else
+        new_hash[language][:style] << style
       end
     end
   end
